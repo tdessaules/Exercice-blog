@@ -1,0 +1,15 @@
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': postItem.loveIts>0,
+                'list-group-item-danger': postItem.loveIts<0}">
+   <app-post-list-item-component [postTitle]='postItem.title'
+								 [postContent]='postItem.content'
+								 [postLoveIts]='postItem.loveIts'
+								 [postCreatedAt]='postItem.created_at'
+						></app-post-list-item-component>
+						
+	<button class="btn btn-success"           
+               (click)="onJaime()">J'aime</button>&nbsp;
+<button class="btn btn-danger"           
+              (click)="onJaimePas()">J'aime pas</button>
+<p>Nombre de j'aime : {{ postItem.loveIts }}</p>
+</li>
