@@ -18,10 +18,12 @@ export class PostListComponentComponent implements OnInit {
   ngOnInit() {
   }
   
+  // fonction permettant d'ajouter un j'aime
   onJaime() {
    this.postItem.loveIts =  this.postItem.loveIts+1;
   }
   
+  // fonction permettant d'enlever un j'aime
   onJaimePas() {
    this.postItem.loveIts =  this.postItem.loveIts-1;
   }

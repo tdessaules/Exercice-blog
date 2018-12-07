@@ -7,12 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PostListItemComponentComponent implements OnInit {
 	
-   @Input() postTitle: string;
-   @Input() postContent: string;
-   @Input() postLoveIts: number;
-   @Input() postCreatedAt: Date;
-   
-
+  @Input() postTitle: string;
+  @Input() postContent: string;
+  @Input() postLoveIts: number;
+  @Input() postCreatedAt: Date;
+  
   constructor() { }
 
   ngOnInit() {
